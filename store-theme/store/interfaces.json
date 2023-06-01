@@ -1,0 +1,15 @@
+{
+  "hello-world-local": {
+     "component": "HelloWorldLocal"
+  },
+  "personalizationlocal": {
+    "component": "Personalizationlocal"
+  },
+  "personalizationlocal2": {
+   "component": "Personalizationlocal2"
+ },
+  "my-button":{
+     "component": "MyButton"
+  }
+
+ }
