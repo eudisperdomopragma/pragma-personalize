@@ -1,0 +1,103 @@
+{
+  "product-summary-pragma": {
+    "component": "ProductSummaryLegacy",
+    "content": {
+      "$ref": "app:pragma.product-summary-pragma#/definitions/ProductSummary"
+    },
+    "allowed": ["addon-summary-btn"]
+  },
+  "product-summary-pragma.shelf": {
+    "component": "ProductSummaryCustom",
+    "composition": "children"
+  },
+  "product-summary-pragma-column": {
+    "component": "Column",
+    "composition": "children"
+  },
+  "product-summary-pragma.unstable--flex": {
+    "component": "ProductSummaryCustom",
+    "composition": "children"
+  },
+  "unstable--product-summary-pragma-column": {
+    "component": "Column",
+    "composition": "children"
+  },
+  "product-summary-pragma-space": {
+    "component": "Spacer"
+  },
+  "product-summary-pragma-attachment-list": {
+    "component": "ProductSummaryAttachmentList"
+  },
+  "product-summary-pragma-buy-button": {
+    "component": "ProductSummaryBuyButton",
+    "content": {
+      "properties": {
+        "buyButtonText": {
+          "$ref": "app:pragma.product-summary-pragma#/definitions/ProductSummary/properties/buyButtonText"
+        }
+      }
+    }
+  },
+  "product-summary-pragma-description": {
+    "component": "ProductSummaryDescription"
+  },
+  "product-summary-pragma-image": {
+    "component": "ProductSummaryImage",
+    "content": {
+      "properties": {
+        "badgeText": {
+          "$ref": "app:pragma.product-summary-pragma#/definitions/ProductSummary/properties/badgeText"
+        }
+      }
+    }
+  },
+  "product-summary-pragma-name": {
+    "component": "ProductSummaryName"
+  },
+  "product-summary-pragma-sku-name": {
+    "component": "ProductSummarySKUName"
+  },
+  "product-summary-pragma-brand": {
+    "component": "ProductSummaryBrand"
+  },
+  "product-summary-pragma-price": {
+    "component": "ProductSummaryPrice",
+    "content": {
+      "properties": {
+        "labelSellingPrice": {
+          "$ref": "app:pragma.product-summary-pragma#/definitions/ProductSummary/properties/labelSellingPrice"
+        },
+        "labelListPrice": {
+          "$ref": "app:pragma.product-summary-pragma#/definitions/ProductSummary/properties/labelListPrice"
+        }
+      }
+    }
+  },
+  "product-summary-pragma-sku-selector": {
+    "component": "ProductSummarySKUSelector"
+  },
+  "product-summary-pragma-specification-badges": {
+    "component": "ProductSummarySpecificationBadges"
+  },
+  "product-summary-pragma-add-to-list-button": {
+    "component": "ProductSummaryAddToListButton",
+    "allowed": ["addon-summary-btn"]
+  },
+  "addon-summary-btn": {
+    "component": "*"
+  },
+  "list-context.product-list-pragma": {
+    "allowed": ["product-summary-pragma"],
+    "composition": "children",
+    "component": "ProductSummaryList",
+    "preview": {
+      "type": "grid",
+      "height": 550
+    }
+  },
+  "list-context.product-list-static-pragma": {
+    "allowed": ["product-summary-pragma"],
+    "composition": "children",
+    "component": "ProductSummaryListWithoutQuery"
+  }
+}

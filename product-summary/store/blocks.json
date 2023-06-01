@@ -1,0 +1,32 @@
+{
+  "product-summary-pragma.shelf": {
+    "children": [
+      "product-summary-pragma-image",
+      "product-summary-pragma-name",
+      "product-summary-pragma-attachment-list",
+      "product-summary-pragma-space",
+      "product-summary-pragma-column#1"
+    ]
+  },
+  "product-summary-pragma-column#1": {
+    "children": [
+      "product-summary-pragma-price",
+      "product-summary-pragma-buy-button"
+    ]
+  },
+  "product-summary-pragma.unstable--flex": {
+    "children": [
+      "product-summary-pragma-image",
+      "product-summary-pragma-name",
+      "product-summary-pragma-attachment-list",
+      "product-summary-pragma-space",
+      "unstable--product-summary-pragma-column#1"
+    ]
+  },
+  "unstable--product-summary-pragma-column#1": {
+    "children": [
+      "product-summary-pragma-price",
+      "product-summary-pragma-buy-button"
+    ]
+  }
+}
